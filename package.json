@@ -4,7 +4,8 @@
   "homepage": "https://pixelporte.com",
   "private": false,
   "dependencies": {
-    "@material-ui/core": "^1.5.1",
+    "@babel/runtime": "7.0.0-beta.55",
+    "@material-ui/core": "^1.2.0",
     "@material-ui/icons": "^1.1.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
