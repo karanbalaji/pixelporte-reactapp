@@ -14,7 +14,7 @@ const SideDrawer = (props) => {
                     duration: 1500,
                     delay:100,
                 smooth:true,
-                offset: -150
+                offset: -100
 
             });
             props.onClose(false)
@@ -29,24 +29,24 @@ const SideDrawer = (props) => {
             onClose={()=> props.onClose(false)}
         >
             <List component="nav">
-                <ListItem button onClick={()=> console.log('Featured')}>
+                <ListItem button onClick={()=> scrollToElement('home')}>
                     Home
                 </ListItem>
 
-                <ListItem button onClick={()=> console.log('Venue NFO')}>
-                    About
+                <ListItem button onClick={()=> scrollToElement('eventInfo',)}>
+                    Event Info
                 </ListItem>
 
                 <ListItem button onClick={()=> scrollToElement('highlights')}>
-                    Portfolio
+                    About
                 </ListItem>
 
-                <ListItem button onClick={()=> console.log('Pricing')}>
-                    Team
+                <ListItem button onClick={()=> scrollToElement('price')}>
+                    Price
                 </ListItem>
 
-                <ListItem button onClick={()=> console.log('Location')}>
-                    Contact
+                <ListItem button onClick={()=> scrollToElement('location')}>
+                    Location
                 </ListItem>
 
             </List> 

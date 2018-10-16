@@ -4,12 +4,12 @@ import Zoom from 'react-reveal/Zoom';
 class Pricing extends Component {
    
    state = {
-        prices:[100,150,250],
-        positions:['Balcony','Medium','Star'],
+        prices:[35,25,25],
+        positions:['Full Stack Developer','Graphic Designers','Customer Experience Design'],
         desc:[
-            'Yo whats up im number 1',
-            'Yo whats up im number 2',
-            'Yo im three'],
+            'Our developers use MERN Stack, Which will be built on RESTful system. Completely future proof and scalable',
+            'Our graphic designers bring visuals to prototyping with invision studio',
+            'Our CXD team will solve the problem of what the customers actually want using Data Science'],
             linkto:['#1','#2','#3'],
             delay:[500,0,500]
 
@@ -21,7 +21,7 @@ class Pricing extends Component {
                 <div className='pricing_item'>
                     <div className='pricing_inner_wrapper'>
                     <div className='pricing_title'>
-                    <span>${this.state.prices[i]}</span>
+                    <span>${this.state.prices[i]}/hr</span>
                     <span>{this.state.positions[i]}</span>
 
 
